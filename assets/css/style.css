@@ -1,0 +1,104 @@
+/* * {
+   box-sizing: border-box;
+   border-color: blue;
+   font-size: 62.5%;
+} */
+
+* {
+   box-sizing: border-box;
+   margin: 0%;
+   padding: 0%;
+}
+
+body {
+   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+   width: 90%;
+   align-items: center;
+   border-style: solid;
+   margin-left: 5%;
+}
+.header {
+   font-size: 2rem;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   margin-top: 0%;
+
+   height: 5rem;
+   background-color: #ffd500;
+}
+
+#title-name {
+   margin-top: 0%;
+}
+
+main {
+   background-color: maroon;
+   margin: 0%;
+   display: flex;
+   flex-wrap: wrap;
+
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+#left-column {
+   width: 50%;
+   padding: 2%;
+   margin: 0%;
+}
+
+#right-column {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   text-align: left;
+}
+
+footer {
+   background-color: #ffd500;
+   width: 100%;
+   margin: 0%;
+   font-size: 1rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2%;
+}
+
+#pokemon-selection {
+   margin-top: 20%; /* temporary, may need to twick*/
+}
+
+#pokemon-btn {
+   background-color: #04aa6d; /* Green */
+   border: none;
+   color: white;
+   padding: 0.5rem;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 1rem;
+   margin: 1rem;
+   cursor: pointer;
+   border-radius: 5%;
+}
+
+#weather-btn {
+   background-color: #04aa6d; /* Green */
+   border: none;
+   color: white;
+   padding: 0.5rem;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 1rem;
+   margin: 1rem;
+   cursor: pointer;
+   border-radius: 5%;
+}
