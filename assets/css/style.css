@@ -14,14 +14,17 @@ body {
    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+/* Commented out "width" and "*margin-left" below to fill the screen 
+with the application, not sure if it was intended not to? -Ian*/
 body {
-   width: 96%;
+   /*width: 96%;*/
    align-items: center;
    border-style: solid;
    border-color: #04aa6d;
-
-   margin-left: 2%;
+   
+   /*margin-left: 2%;*/
 }
+
 .header {
    font-size: 2rem;
    font-family: Arial, Helvetica, sans-serif;
@@ -72,6 +75,20 @@ footer {
    padding: 2%;
 }
 
+#pokemon-photo-area {
+   background-color: white;
+   border-radius: 10%;
+   width: 100%;
+}
+
+img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   transform: scale(0.8);
+}
+
 #pokemon-selection {
    margin-top: 20%; /* temporary, may need to twick*/
 }
@@ -103,3 +120,27 @@ footer {
    cursor: pointer;
    border-radius: 5%;
 }
+
+/* Media Query Start */
+
+/*
+@media screen and (max-width: 980px) {
+   
+}
+*/
+
+@media screen and (max-width: 768px) {
+   body {
+      
+   }
+
+   main {
+      flex-direction: column;
+   }
+}
+
+/*
+@media screen and (max-width: 575px) {
+
+}
+*/
