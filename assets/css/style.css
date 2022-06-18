@@ -78,7 +78,7 @@ footer {
 #pokemon-photo-area {
    background-color: white;
    border-radius: 10%;
-   width: 100%;
+   width: 80%;
    border-style: solid;
    border-color: black;
    border-width: 7px;
@@ -125,20 +125,20 @@ img {
 }
 
 /* Media Query Start */
-
-/*
 @media screen and (max-width: 980px) {
-   
+   #pokemon-photo-area {
+      width: 100%;
+   }
 }
-*/
+
 
 @media screen and (max-width: 768px) {
-   body {
-      
-   }
-
    main {
       flex-direction: column;
+   }
+
+   #pokemon-photo-area {
+      border-width: 5px;
    }
 }
 
