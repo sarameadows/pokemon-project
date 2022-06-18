@@ -79,6 +79,9 @@ footer {
    background-color: white;
    border-radius: 10%;
    width: 100%;
+   border-style: solid;
+   border-color: black;
+   border-width: 7px;
 }
 
 img {
