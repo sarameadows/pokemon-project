@@ -96,6 +96,13 @@ img {
    margin-top: 20%; /* temporary, may need to twick*/
 }
 
+#pokemon-name-select, #city {
+   /* height: 40px; */
+   padding: 0.5rem;
+   margin: 1rem;
+   width: 200px;
+}
+
 #pokemon-btn {
    background-color: #04aa6d; /* Green */
    border: none;
@@ -122,6 +129,11 @@ img {
    margin: 1rem;
    cursor: pointer;
    border-radius: 5%;
+}
+
+#weather-display {
+   display: flex;
+   align-items: center;
 }
 
 /* Media Query Start */
