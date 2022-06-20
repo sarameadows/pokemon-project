@@ -9,6 +9,31 @@ var citySearchButtonEl = document.querySelector("#weather-btn");
 var weatherDisplayEl = document.querySelector("#weather-display");
 var pokemonSearchFormEl = document.querySelector("#pokemon-search");
 
+
+var displayPokeData = function(pokemon) {
+    pokemonNameDisplayEL.innerHTML = pokemon.name;
+
+    var height = document.createElement("p");
+    height.innerHTML = "Height: " + pokemon.height + " decimeters";
+    pokemonStatsDisplayEL.appendChild(height);
+
+    var weight = document.createElement("p");
+    weight.innerHTML = "Weight: " + pokemon.weight + " hectograms";
+    pokemonStatsDisplayEL.appendChild(weight);
+
+    var type = document.createElement("p");
+    type.innerHTML = "Type: " + pokemon.types[0].type.name;
+    pokemonStatsDisplayEL.appendChild(type);
+
+    var image = document.createElement("img");
+    image.setAttribute("src", pokemon.sprites.front_default);
+    pokemonPhotoAreaEL.appendChild(image);
+
+    var moves = document.createElement("p");
+    moves.innerHTML = "Move: " + pokemon.moves[0].move.name;
+    pokemonStatsDisplayEL.appendChild(moves);
+}
+
 //get pokemon data based on input
 var getPokeData = function(pokemon) {
     //clear previous data
@@ -21,7 +46,7 @@ var getPokeData = function(pokemon) {
         .then(function(response) {
             if(response.ok) {
                 response.json().then(function(data) {
-                    console.log(data);
+                    displayPokeData(data);
                 });
             }
         })
