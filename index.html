@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITLE</title>
-</head>
-<body>
-    <!-- Display our title and weather -->
-    <header>
-        <!-- Title -->
-        <h1 id="title">Pokedex</h1>
-    </header>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./assets/css/style.css" />
+      <title>Pokédex</title>
+   </head>
+   <body>
+      <!-- Display our title and weather -->
+      <header class="header">
+         <!-- Title -->
+         <h1 id="title-name">Pokédex</h1>
+      </header>
 
-    <main>
-        <!-- Left column for the photo -->
-        <div id="left-column">
+      <main>
+         <!-- Left column for the photo -->
+         <div id="left-column">
             <!-- white area where photo will go -->
-            <div id="pokemon-photo-area">
-                
-            </div>
-        </div>
+            <div id="pokemon-photo-area"><img src="./assets/image/Pokemon.png" alt=""></div>
+         </div>
 
-        <!-- Right column for the stats and button -->
-        <div id="right-column">
+         <!-- Right column for the stats and button -->
+         <div id="right-column">
             <!-- grey screen where name and stats will be displayed -->
             <div id="stat-screen">
-                <!-- pokemon name -->
-                <h2 id="pokemon-name-display"></h2>
-                <!-- pokemon stats -->
-                <div id="pokemon-stats-display">
-
-                </div>
+               <!-- pokemon name -->
+               <h2 id="pokemon-name-display">Pokemon name</h2>
+               <!-- pokemon stats -->
+               <div id="pokemon-stats-display">Pokemon stats</div>
             </div>
 
             <!-- form area to enter pokemon name and button -->
             <div id="pokemon-selection">
-                <form id="pokemon-search">
-                    <input name="pokemon" type="text" id="pokemon-name-select" placeholder="Enter Pokemon name here" autofocus="true"/>
-                    <button type="submit" id="pokemon-btn">Search</button>
-                </form>
+               <form id="pokemon-search">
+                  <input
+                     name="pokemon"
+                     type="text"
+                     id="pokemon-name-select"
+                     placeholder="Enter Pokemon name here"
+                     autofocus="true"
+                  />
+                  <button type="submit" id="pokemon-btn">Search</button>
+               </form>
             </div>
-        </div>
-    </main>
+         </div>
+      </main>
 
-    <footer>
-        <div id="weather-selection">
+      <footer>
+         <div id="weather-selection">
             <form id="weather-search">
-                <input name="city" id="city" type="text" autofocus="true" placeholder="Miami"/>
-                <button type="submit" id="weather-btn">Search</button>
+               <input name="city" id="city" type="text" autofocus="true" placeholder="Miami" />
+               <button type="submit" id="weather-btn">Search</button>
             </form>
-        </div>
-        <div id="weather-display">
-
-        </div>
-    </footer>
-</body>
+         </div>
+         <div id="weather-display">Icon, Temperatur and Time/Date</div>
+      </footer>
+   </body>
 </html>

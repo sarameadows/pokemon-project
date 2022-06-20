@@ -1,0 +1,149 @@
+/* * {
+   box-sizing: border-box;
+   border-color: blue;
+   font-size: 62.5%;
+} */
+
+* {
+   box-sizing: border-box;
+   margin: 0%;
+   padding: 0%;
+}
+
+body {
+   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* Commented out "width" and "*margin-left" below to fill the screen 
+with the application, not sure if it was intended not to? -Ian*/
+body {
+   /*width: 96%;*/
+   align-items: center;
+   border-style: solid;
+   border-color: #04aa6d;
+   
+   /*margin-left: 2%;*/
+}
+
+.header {
+   font-size: 2rem;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   margin-top: 0%;
+   height: 5rem;
+   background-color: #ffd500;
+}
+
+#title-name {
+   margin-top: 0%;
+}
+
+main {
+   background-color: maroon;
+   margin: 0%;
+   display: flex;
+   flex-wrap: wrap;
+
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+#left-column {
+   width: 50%;
+   padding: 2%;
+   margin: 0%;
+}
+
+#right-column {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   text-align: left;
+}
+
+footer {
+   background-color: #ffd500;
+   width: 100%;
+   margin: 0%;
+   font-size: 1rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2%;
+}
+
+#pokemon-photo-area {
+   background-color: white;
+   border-radius: 10%;
+   width: 80%;
+   border-style: solid;
+   border-color: black;
+   border-width: 7px;
+}
+
+img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   transform: scale(0.8);
+}
+
+#pokemon-selection {
+   margin-top: 20%; /* temporary, may need to twick*/
+}
+
+#pokemon-btn {
+   background-color: #04aa6d; /* Green */
+   border: none;
+   color: white;
+   padding: 0.5rem;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 1rem;
+   margin: 1rem;
+   cursor: pointer;
+   border-radius: 5%;
+}
+
+#weather-btn {
+   background-color: #04aa6d; /* Green */
+   border: none;
+   color: white;
+   padding: 0.5rem;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 1rem;
+   margin: 1rem;
+   cursor: pointer;
+   border-radius: 5%;
+}
+
+/* Media Query Start */
+@media screen and (max-width: 980px) {
+   #pokemon-photo-area {
+      width: 100%;
+   }
+}
+
+
+@media screen and (max-width: 768px) {
+   main {
+      flex-direction: column;
+   }
+
+   #pokemon-photo-area {
+      border-width: 5px;
+   }
+}
+
+/*
+@media screen and (max-width: 575px) {
+
+}
+*/
