@@ -56,11 +56,18 @@ main {
 }
 
 #right-column {
-   width: 50%;
+   /* width: 50%; */
    display: flex;
    flex-direction: column;
    /* align-items: center; */
    text-align: left;
+   /* sara added the following */
+   margin-right: 100px;
+   background-color: grey;
+   width: 400px;
+   border: solid 5px;
+   border-radius: 25px;
+   height: 300px;
 }
 
 footer {
@@ -82,6 +89,13 @@ footer {
    border-style: solid;
    border-color: black;
    border-width: 7px;
+   /* sara added this height element */
+   height: 400px;
+}
+
+/* sara added this h2 style */
+h2 {
+   padding-bottom: 10px;
 }
 
 img {
@@ -90,6 +104,12 @@ img {
    margin-right: auto;
    width: 100%;
    transform: scale(0.8);
+}
+
+/* sara added this stat-screen style */
+#stat-screen {
+   color: white;
+   padding: 20px;
 }
 
 #pokemon-selection {

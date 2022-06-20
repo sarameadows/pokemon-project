@@ -7,6 +7,8 @@ var cityInputEl = document.querySelector("#city");
 var weatherDisplayEl = document.querySelector("#weather-display");
 var pokemonSearchFormEl = document.querySelector("#pokemon-search");
 var weatherSearchFormEl = document.querySelector("#weather-search");
+var pokemonButtonsEl = document.querySelector("#pokemon-history");
+var pokemon = [];
 
 const myKey = "e2a5d3faf3cdaf95fb1600353eedf99c";
 
@@ -76,10 +78,11 @@ var pokemonFormSubmitHandler = function(event) {
         getPokeData(selectedPokemon);
         pokemonInputEl.value = "";
         //set to local storage
-        //store(selectedPokemon);
+        store(selectedPokemon);
     }
 };
 
+//display the weather in weatherDisplayEl
 var displayWeather = function(weather) {
     //current date element
     var today = document.createElement("p");
@@ -97,6 +100,7 @@ var displayWeather = function(weather) {
     weatherDisplayEl.appendChild(todayTemp);
 }
 
+//get the weather info for selected city
 var getWeather = function(city) {
     //clear weather display for new data
     weatherDisplayEl.innerHTML = "";
@@ -130,5 +134,39 @@ var weatherFormSubmitHandler = function(event) {
     }
 }
 
+//load previously searched pokemon
+var load = function() {
+    if(localStorage.getItem("pokemon")){
+        pokemon = JSON.parse(localStorage.getItem("pokemon"));
+        for (var i = 0; i < pokemon.length; i++) {
+            addButton(pokemon[i]);
+        }
+    }
+}
+
+//store the searched for city in local storage
+var store = function(selectedPokemon) {
+    addButton(selectedPokemon);
+    pokemon.push(selectedPokemon);
+    localStorage.setItem("pokemon", JSON.stringify(pokemon));
+}
+
+//add a button for previously searched pokemon
+var addButton = function(pokemon) {
+    var newButton = document.createElement("button");
+    newButton.innerHTML = pokemon;
+    pokemonButtonsEl.appendChild(newButton);
+}
+
+var pokemonButtonClickHandler = function(event) {
+    var historyPokemon = event.target.innerHTML;
+
+    if(historyPokemon) {
+        getPokeData(historyPokemon);
+    }
+}
+
+load();
 pokemonSearchFormEl.addEventListener("submit", pokemonFormSubmitHandler);
 weatherSearchFormEl.addEventListener("submit", weatherFormSubmitHandler);
+pokemonButtonsEl.addEventListener("click", pokemonButtonClickHandler);
