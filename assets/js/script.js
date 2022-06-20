@@ -11,7 +11,23 @@ var pokemonSearchFormEl = document.querySelector("#pokemon-search");
 
 //get pokemon data based on input
 var getPokeData = function(pokemon) {
-    console.log(pokemon);
+    //clear previous data
+    pokemonStatsDisplayEL.innerHTML = "";
+    
+    //format the url to get data for the selected pokemon
+    var apiUrl = "https://pokeapi.co/api/v2/pokemon/" + pokemon + "/";
+    
+    fetch(apiUrl)
+        .then(function(response) {
+            if(response.ok) {
+                response.json().then(function(data) {
+                    console.log(data);
+                });
+            }
+        })
+        .catch(function(error) {
+            alert("unable to connect");
+        });
 };
 
 // send pokemon name from search bar to getPokeDatafunction
