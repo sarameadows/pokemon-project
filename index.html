@@ -18,7 +18,9 @@
          <!-- Left column for the photo -->
          <div id="left-column">
             <!-- white area where photo will go -->
-            <div id="pokemon-photo-area"><img src="./assets/image/Pokemon.png" alt=""></div>
+            <div id="pokemon-photo-area">
+                <!-- <img src="./assets/image/Pokemon.png" alt="pokemon photo"> -->
+            </div>
          </div>
 
          <!-- Right column for the stats and button -->
@@ -26,9 +28,8 @@
             <!-- grey screen where name and stats will be displayed -->
             <div id="stat-screen">
                <!-- pokemon name -->
-               <h2 id="pokemon-name-display">Pokemon name</h2>
-               <!-- pokemon stats -->
-               <div id="pokemon-stats-display">Pokemon stats</div>
+               <h2 id="pokemon-name-display"></h2>
+               <div id="pokemon-stats-display"></div>
             </div>
 
             <!-- form area to enter pokemon name and button -->
@@ -43,6 +44,8 @@
                   />
                   <button type="submit" id="pokemon-btn">Search</button>
                </form>
+               <!-- sara added a pokemon history area for the history buttons -->
+               <div id="pokemon-history"></div>
             </div>
          </div>
       </main>
@@ -54,7 +57,10 @@
                <button type="submit" id="weather-btn">Search</button>
             </form>
          </div>
-         <div id="weather-display">Icon, Temperatur and Time/Date</div>
+         <div id="weather-display"></div>
       </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="./assets/js/script.js"></script>
    </body>
 </html>

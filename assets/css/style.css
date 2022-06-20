@@ -56,11 +56,18 @@ main {
 }
 
 #right-column {
-   width: 50%;
+   /* width: 50%; */
    display: flex;
    flex-direction: column;
    /* align-items: center; */
    text-align: left;
+   /* sara added the following */
+   margin-right: 100px;
+   background-color: grey;
+   width: 400px;
+   border: solid 5px;
+   border-radius: 25px;
+   height: 300px;
 }
 
 footer {
@@ -82,6 +89,13 @@ footer {
    border-style: solid;
    border-color: black;
    border-width: 7px;
+   /* sara added this height element */
+   height: 400px;
+}
+
+/* sara added this h2 style */
+h2 {
+   padding-bottom: 10px;
 }
 
 img {
@@ -92,8 +106,21 @@ img {
    transform: scale(0.8);
 }
 
+/* sara added this stat-screen style */
+#stat-screen {
+   color: white;
+   padding: 20px;
+}
+
 #pokemon-selection {
    margin-top: 20%; /* temporary, may need to twick*/
+}
+
+#pokemon-name-select, #city {
+   /* height: 40px; */
+   padding: 0.5rem;
+   margin: 1rem;
+   width: 200px;
 }
 
 #pokemon-btn {
@@ -122,6 +149,11 @@ img {
    margin: 1rem;
    cursor: pointer;
    border-radius: 5%;
+}
+
+#weather-display {
+   display: flex;
+   align-items: center;
 }
 
 /* Media Query Start */
