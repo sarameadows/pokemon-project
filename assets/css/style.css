@@ -75,6 +75,8 @@ main {
    border-radius: 25px;
    height: 300px;
    text-align: center;
+   font-size: 150%;
+   line-height: 150%;
 }
 #pokemon-search {
    align-items: center;
@@ -107,7 +109,8 @@ footer {
    border-color: black;
    border-width: 7px;
    /* sara added this height element */
-   height: 400px;
+   /* height: 400px; */
+   min-height: 300px;
 }
 
 /* sara added this h2 style */
