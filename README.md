@@ -13,8 +13,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Webpage Link:
 
- [https://spbhanda.github.io/generatePassword/](https://sarameadows.github.io/pokemon-project/)
+https://sarameadows.github.io/pokemon-project/
 
 ## Webpage Snapshot:
 
-![](https://github.com/)
+![]([https://github.com/](https://github.com/sarameadows/pokemon-project/blob/main/assets/image/webpage-layout.JPG)
+
