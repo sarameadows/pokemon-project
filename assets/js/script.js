@@ -92,6 +92,8 @@ var displayWeather = function(weather) {
     //get image for forecast
     var icon = document.createElement("img");
     icon.setAttribute("src", "https://openweathermap.org/img/wn/" + weather.weather[0].icon + "@2x.png")
+    icon.style.height = "100px";
+    icon.style.width = "100px";
     weatherDisplayEl.appendChild(icon);
 
     //temp element
