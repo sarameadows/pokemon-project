@@ -17,5 +17,5 @@ https://sarameadows.github.io/pokemon-project/
 
 ## Webpage Snapshot:
 
-![]([https://github.com/](https://github.com/sarameadows/pokemon-project/blob/main/assets/image/webpage-layout.JPG)
+![](https://github.com/sarameadows/pokemon-project/blob/main/assets/image/webpage-layout.JPG)
 
