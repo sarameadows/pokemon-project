@@ -148,7 +148,7 @@ img {
    width: 200px;
 }
 
-#pokemon-btn {
+#pokemon-btn, #weather-btn {
    background-color: #04aa6d; /* Green */
    border: none;
    color: white;
@@ -162,7 +162,8 @@ img {
    border-radius: 5%;
 }
 
-#weather-btn {
+.history-btn {
+   display: flex;
    background-color: #04aa6d; /* Green */
    border: none;
    color: white;

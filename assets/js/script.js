@@ -155,6 +155,7 @@ var store = function(selectedPokemon) {
 var addButton = function(pokemon) {
     var newButton = document.createElement("button");
     newButton.innerHTML = pokemon;
+    newButton.classList.add("history-btn");
     pokemonButtonsEl.appendChild(newButton);
 }
 
