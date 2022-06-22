@@ -71,7 +71,7 @@ var pokemonFormSubmitHandler = function(event) {
     event.preventDefault();
     
     //get value from input element
-    var selectedPokemon = pokemonInputEl.value.trim();
+    var selectedPokemon = pokemonInputEl.value.trim().toLowerCase();
 
     // if it is a real pokemon get the stats
     if(selectedPokemon) {
