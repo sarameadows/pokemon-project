@@ -1,15 +1,13 @@
-# pokemon-project
-
-
-
-## Project Title:
-
-pokemon-project - Search Engine Optimization - Web Development - Software Development - HTML - CSS
+# Pokédex
 
 ## Project Description:
+A website that retrieves and stores data about Pokémon and it displays weather for the city where you might be going to catch Pokémon. 
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxx
+## Buit with:
+* Optimization 
+*  HTML
+*  CSS
+*  Javascript
 
 ## Webpage Link:
 
