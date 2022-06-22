@@ -83,6 +83,10 @@ main {
    align-items: center;
 }
 
+#history-title {
+   color: aliceblue;
+}
+
 #pokemon-history {
    margin-bottom: 10px;
    margin-left: 10px;
@@ -150,7 +154,8 @@ img {
    width: 200px;
 }
 
-#pokemon-btn, #weather-btn {
+#pokemon-btn,
+#weather-btn {
    background-color: #04aa6d; /* Green */
    border: none;
    color: white;
@@ -214,8 +219,25 @@ img {
    }
 }
 
-/*
 @media screen and (max-width: 575px) {
+   #stat-screen {
+      margin-top: 5%;
+      background-color: grey;
+      width: 100%;
+      border: solid 5px;
+      border-radius: 25px;
+      height: 200px;
+      text-align: center;
+      font-size: 100%;
+      line-height: 120%;
+   }
 
+   #pokemon-photo-area {
+      width: 100%;
+      margin-top: 10%;
+
+      border-width: 7px;
+
+      height: 200px;
+   }
 }
-*/
